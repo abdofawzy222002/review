@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "image-container image-container image-container  form-container form-container ";
+}
+.image-container{
+    grid-area:image-container ;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.image-container  img{
+    height: 85vh;
+    width: 90%;
+}
+.form-container {
+    grid-area:form-container ;
+    padding: 2%;
+    margin: 10%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.form-details .title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+.form-details p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+input {    
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-bottom:1px solid gray ;
+    outline: none; 
+    height: 100%;
+    width: 80%;
+    padding-bottom:5% ;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    background:none ;
+    font-size: 16px;
+}
+input::placeholder{
+    color: #DB4444;
+    font-size: 16px;
+    font-weight: 300;
+}
+input:focus::placeholder{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+.box-input {
+    width: 100%;
+    height: 50px;
+    margin: 5%;
+}
+button {
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 3%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
+.create-button a{
+    color: #fafafa;
+    text-decoration: none;
+}
+.create-button {
+    background: #DB4444;
+    border: none;
+}
+.google-button a{
+    color: black;
+    padding-bottom: 2%;
+    text-decoration: none;
+}
+.google-button {
+    background: none;
+    border: 1px solid black;
+    text-align: center;
+}
+.have-account {
+    margin-right: 4%;
+    text-decoration: none;
+    color: black;
+}
+.log-in {
+    color: black;
+}
+form {
+    padding-bottom: 20%;
+}
+@media screen and (max-width: 768px) {
+    button {
+        width: 80%;
+        height: 8vh;
+    }
+    .image-container  img {
+        display: none;
+    }
+    .google-button a{
+        color: #DB4444;
+    }
+    .create-button a{
+        color: #fafafa;
+    }
+    .buttons a{
+        font-size: large;
+        font-weight: 700;
+        color: #DB4444;
+    }
+    .buttons a:hover{
+        color: black;
+    }
+    .google-button {
+        background: #fafafa;
+        border: none;
+    }
+    .container{
+        display: grid;
+        align-items: center;
+        height: 100vh;
+        color: #DB4444;
+        background-image: url(./Side\ Image.png);
+        background-color: #FFFFFF;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: " form-container form-container form-container form-container form-container ";
+    }
+    
+  }
+@media screen and (max-width: 991px) {
+    button {
+        width: 80%;
+        height: 6vh;
+    }
+    .create-button a{
+        color: #fafafa;
+    }
+    
+  }
+@media screen and (max-width: 992px) {
+    button {
+        width: 80%;
+        height: 8vh;
+    }
+    .create-button a{
+        color: #fafafa;
+    }
+  }
